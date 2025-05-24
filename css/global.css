@@ -1,0 +1,385 @@
+:root {
+    --dark-color: #1b1714;
+    --primary-color: #3E362E;
+    --secondary-color: #865D36;
+    --accent-color: #93785B;
+    --highlight-color: #AC8968;
+    --neutral-color: #A69080;
+    --h1-color: #e1bea6;
+    --neutral-color: #f1e2d7;
+    --background-color: #F7F9FB;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    color: var(--highlight-color);
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+
+.navbar-collapse {
+    text-align: right;
+    margin-right: -4rem;
+    background-color: var(--primary-color); /* Použijeme farbu z palety */
+}
+
+.navbar-brand .badge {
+    background-color: #93785B !important;
+    color: #3E362E !important;
+    border-radius: 4rem; /* Väčšie zaoblenie rohov */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Plynulý prechod pri hover */
+}
+
+.navbar-brand .badge:hover {
+    border-radius: 1rem !important;
+    background-color: #A69080 !important;
+}
+
+.a{
+    color: #A69080;
+}
+
+.logout-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-link {
+color: #F7F9FB; /* Svetlejšia farba textu */
+text-decoration: none; /* Odstráni podčiarknutie */
+}
+
+.nav-link:hover {
+color: #AC8968; /* Svetlejšia farba pri hover */
+}
+
+.navbar-toggler {
+    border: none; /* Odstráni okraj v predvolenom stave */
+}
+  
+.navbar-toggler:hover {
+border: var(--background-color); /* Zobrazí okraj pri hover */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(247, 249, 251, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Nastaví svetlejšiu farbu pre ikonku (tu je použitá farba #F7F9FB z palety) */
+}
+
+.navbar-logo {
+    position: relative;
+    width: 75%; /* Nastaví šírku loga na 2rem */
+    height: auto; /* Zachová pomer strán obrázka */
+    display: block; /* Zabezpečí správne zarovnanie */
+    margin: auto auto; /* Zarovná logo na stred */
+}
+.img2{
+    padding: 2rem ;
+    margin: auto auto;
+    border-radius: 3rem;
+    max-width: 1400px; /* Zabezpečí, že obrázok sa prispôsobí šírke rodiča */
+}
+@media (max-width: 768px){
+    .img2{
+        max-width: 500px;
+    }
+}
+
+
+.customNavbar {
+display: flex;
+justify-content: flex-end;
+flex-grow: 1;
+margin-right: 5rem;
+}
+
+.customNavbar .nav-item {
+margin-left: 2rem; /* Nastaví odstup 1rem medzi jednotlivými položkami */
+}
+
+h1 {
+color: #f1e2d7;
+font-weight: 800;
+font-size: 3rem;
+text-align: center;
+}
+
+.homeMainText {
+padding-top: 1.5rem;
+max-width: 30rem;
+margin: 0px auto;
+
+}
+
+
+.formAdd {
+max-width: 25rem;
+margin: 0px auto;
+border-radius: 6px;
+padding: 1.5rem;
+background-color: var(--neutral-color); /* Použijeme farbu z palety */
+}
+
+.myRow {
+align-items: center;
+/* display: flex;
+background-color: red;
+justify-content: space-between;
+flex-direction: row; */
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 .6rem .6rem rgba(0, 0, .5, .5);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.035);
+    border-radius: .8rem;
+    transition: border-radius 0.4s ease;
+}
+.custom-container {
+    background-color: var(--accent-color); /* Svetlosivá farba pozadia */
+    padding: 1rem; /* Voliteľné: vnútorné odsadenie */
+    border-radius: 1rem; /* Voliteľné: zaoblené rohy */
+    box-shadow: 0 1rem 1rem rgba(0, 0, .5, .5); /* Voliteľné: jemný tieň */
+}
+.review-select {
+    margin-bottom: 1rem;
+}
+
+  
+.custom-select {
+    width: 100%; /* Nastaví šírku na 100% rodiča */
+    padding: 0.5rem; /* Vnútorné odsadenie */
+    font-size: 1rem; /* Veľkosť textu */
+    border: 1px solid var(--neutral-color); /* Farba okraja */
+    border-radius: 0.5rem; /* Zaoblené rohy */
+    background-color: var(--background-color); /* Farba pozadia */
+    color: var(--primary-color); /* Farba textu */
+    appearance: none; /* Odstráni predvolené štýly prehliadača */
+}
+
+.custom-select:focus {
+    outline: none; /* Odstráni modrý okraj pri zameraní */
+    border-color: var(--highlight-color); /* Farba okraja pri zameraní */
+    box-shadow: 0 0 5px var(--highlight-color); /* Jemný tieň pri zameraní */
+}
+
+
+
+/**/
+/* tu bude css pre kartu s rezortom maria */
+/**/
+
+
+
+.card-container {
+    user-select: none;
+    display: flex;
+    flex-direction: row; /* Horizontálne usporiadanie pre počítače */
+    align-items: center;
+    background-color: var(--accent-color); /* Farba pozadia karty */
+    border-radius: 1rem; /* Zaoblené rohy */
+    overflow: hidden; /* Skryje pretečenie obsahu */
+    box-shadow: 0 1rem 1rem rgba(0, 0, .5, .5); /* Jemný tieň */
+    margin: 3rem auto; /* Zarovná kartu na stred */
+    max-width: 750px; /* Maximálna šírka karty */
+    height: 400px; /* Nastav výšku podľa potreby */
+}
+.card-container:hover {
+    transform: scale(1.02); /* Zvýraznenie pri hover */
+    transition: transform 0.3s ease; /* Plynulý prechod */
+   
+}
+  
+.card-image img {
+    width: 100%; /* Obrázok vyplní priestor */
+    height: 100%; /* Zachová pomer strán */
+    object-fit:cover; /* Orezanie obrázka, ak je potrebné */
+
+}
+
+.card-image {
+    flex: 1; /* Obrázok zaberie polovicu šírky */
+    width: 100%;
+    height: 100%; /* Nastav výšku podľa potreby */
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem rgba(0, 0, .5, .5);
+}
+  
+.card-image2 img{
+    flex: 1; /* Obrázok zaberie polovicu šírky */
+    width: 50%;
+    height: 100%; /* Nastav výšku podľa potreby */
+    border-radius: 20rem; /* Zaoblené rohy iba na ľavej strane */
+    overflow: hidden;
+
+}
+.card-image2:hover img {
+    transform: scale(1.05); /* Zvýraznenie pri hover */
+    transition: transform 0.3s ease; /* Plynulý prechod */
+}
+
+.card-content {
+    flex: 1; /* Obsah zaberie druhú polovicu */
+    padding: 1.5rem; /* Vnútorné odsadenie */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color); /* Farba nadpisu */
+}
+  
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Farba textu */
+}
+  
+.card-content .btn {
+    align-self: center; /* Zarovná tlačidlo na začiatok */
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color); /* Farba tlačidla */
+    color: var(--neutral-color); /* Farba textu tlačidla */
+    text-decoration: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, .5, .5);
+    transition: background-color 0.3s ease;
+}
+  
+  .card-content .btn:hover {
+    background-color: var(--primary-color); /* Farba tlačidla pri hover */
+}
+
+@media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Vertikálne usporiadanie pre mobil */
+      height: 600px;
+    }
+  
+    .card-image {
+        height: 65%; /* Obrázok zaberie 75 % výšky kontajnera */
+        flex: none;
+      width: 100%; /* Obrázok vyplní celú šírku */
+    }
+  
+    .card-content {
+        width: 100%; /* Obsah vyplní celú šírku */
+        height: 35%;
+      padding: 1rem; /* Zmenší vnútorné odsadenie */
+    }
+  
+    .card-content h2 {
+      font-size: 1.2rem; /* Zmenší veľkosť nadpisu */
+    }
+  
+    .card-content p {
+      font-size: 0.9rem; /* Zmenší veľkosť textu */
+    }
+}
+
+
+
+
+
+/*css pre footer*/
+
+
+.footer {
+    margin-top: auto; /* Posunie footer na spodok stránky */
+    background-color: var(--dark-color); /* Farba pozadia */
+    color: var(--neutral-color); /* Farba textu */
+    padding: .1rem; /* Priestor okolo obsahu */
+    text-align: center; /* Zarovná text na stred */
+    display: flex; /* Aktivuje flexbox */
+    flex-direction: row; /* Horizontálne usporiadanie */
+    justify-content: center; /* Zarovná všetko na stred */
+    align-items: center; /* Vertikálne zarovnanie na stred */
+    gap: 2rem; /* Medzera medzi textom a odkazmi */
+    flex-wrap: wrap; /* Zalomí obsah na menších obrazovkách */
+  }
+  .footer p {
+    margin: 0; /* Odstráni medzery okolo textu */
+    font-size: 0.9rem; /* Veľkosť textu */
+  }
+  
+  .footer-links {
+    list-style: none; /* Odstráni odrážky */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aktivuje flexbox pre odkazy */
+    justify-content: center;
+    gap: 1rem; /* Medzera medzi odkazmi */
+  }
+  
+  .footer-links li a {
+    color: var(--primary-color); /* Farba odkazov */
+    text-decoration: none; /* Odstráni podčiarknutie */
+    font-size: 0.9rem; /* Veľkosť textu odkazov */
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline; /* Podčiarkne pri prechode myšou */
+  }
+
+
+
+
+  .spaced {
+    margin-bottom: 2rem; /* Pridá priestor pod každý <h1> */
+  }
+
+
+  /*swiper*/
+
+.swiper-container {
+    position: relative; /* Nastaví relatívne umiestnenie pre navigačné prvky */
+    width: 100%; /* Šírka kontajnera */
+    height: 100%; /* Nastav výšku podľa potreby */
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute; /* Umiestni šípky relatívne k Swiper kontajneru */
+  top: 50%; /* Zarovná šípky vertikálne na stred */
+  z-index: 10; /* Zabezpečí, že šípky budú nad obsahom */
+  color: #fff; /* Farba šípok */
+}
+
+.swiper-pagination {
+  position: absolute; /* Umiestni stránkovanie relatívne k Swiper kontajneru */
+  bottom: 11rem; /* Umiestni stránkovanie na spodok kontajnera */
+  left: 50%; /* Zarovná stránkovanie na stred */
+  z-index: 10; /* Zabezpečí, že stránkovanie bude nad obsahom */
+  
+}
+.swiper-pagination-bullet {
+    background: var(--secondary-color); /* Farba bodiek */
+    opacity: 0.7; /* Priehľadnosť bodiek */
+}
+.swiper-pagination-bullet-active {
+    background: var(--h1-color); /* Farba aktívnej bodky */
+    opacity: 1; /* Plná priehľadnosť aktívnej bodky */
+}
+
+.swiper-slide {
+    display: flex; /* Zabezpečí, že obsah vo vnútri slideu bude správne zarovnaný */
+    justify-content: center; /* Zarovná obsah na stred */
+    align-items: center; /* Vertikálne zarovná obsah */
+    width: auto; /* Zabezpečí, že šírka slideu sa prispôsobí obsahu */
+}

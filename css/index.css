@@ -1,0 +1,52 @@
+html, body {
+  height: 100%; /* Zabezpečí, že stránka bude mať vždy výšku obrazovky */
+  margin: 0; /* Odstráni predvolené medzery */
+  display: flex;
+  flex-direction: column; /* Umožní vertikálne usporiadanie obsahu */
+}
+.actions {
+  background-color: transparent;
+  list-style: none; /* Odstráni odrážky zo zoznamu */
+  padding: 0; /* Odstráni vnútorné odsadenie */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto; /* Zarovná zoznam na stred */
+  text-align: center; /* Zarovná obsah na stred */
+  display: flex; /* Aktivuje flexbox */
+  justify-content: center; /* Zarovná položky na stred */
+  align-items: center;
+  font-size: 1rem;
+  
+}
+
+.actions li {
+  padding: 1rem;
+  margin: 0px 10px;
+  background-color: #93785B; /* Použijeme farbu z palety */
+  cursor: pointer;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: border-radius 0.3s ease;
+  box-shadow: 0 .6rem .6rem rgba(0, 0, .5, .5);
+}
+
+.actions li a {
+  text-decoration: none;
+  color: var(--background-color); /* Použijeme farbu z palety */
+  box-sizing: border-box;
+}
+
+.actions li:hover,
+.actions li:active {
+  transform: scale(1.035);
+  background-color: #ab9e98;
+  border-radius: .5rem;
+  transition: border-radius 0.3s ease;
+}
+
+.about-image {
+  display: block;
+  width: 100vw;
+  padding: 0;
+  margin: 0 ;
+}

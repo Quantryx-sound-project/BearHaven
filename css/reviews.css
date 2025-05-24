@@ -1,0 +1,188 @@
+section ul {
+  list-style: none;
+  max-width: 40rem;
+  margin: 0px auto;
+  margin-top: 2rem;
+   /* Použijeme farbu z palety */
+}
+
+.myCard {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  color: var(--primary-color); /* Použijeme farbu z palety */
+}
+
+.longText {
+  width: "100%";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.review-actions .btn {
+  margin: 0 0.5rem;
+}
+
+.answer-details {
+  text-align: center;
+  color: rgb(169, 169, 169);
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row; /* Usporiada obsah do stĺpca */
+  align-items:flex-start; /* Zarovná text naľavo */
+  text-align: left; /* Zarovná text naľavo */
+  gap: 1rem; /* Pridá medzeru medzi riadkami */
+  
+}
+
+@media (max-width: 768px) {
+  .review-actions {
+    flex-direction: row; /* Zmení usporiadanie na stĺpec */
+    align-items: flex-start; /* Zarovná obsah na začiatok */
+  }
+
+  .review-actions .btn {
+    margin: 0.5rem 0; /* Pridá medzeru medzi tlačidlami */
+    width: 100%; /* Tlačidlá budú na celú šírku */
+  }
+
+  .answer-details {
+    text-align: left; /* Zarovná text naľavo */
+    margin-bottom: 1rem; /* Pridá medzeru pod textom */
+  }
+  .author-info {
+    display: flex;
+    flex-direction: column; /* Usporiada obsah do stĺpca */
+    align-items: center; /* Zarovná text naľavo */
+    text-align: center; /* Zarovná text naľavo */
+    gap: 0rem; /* Pridá medzeru medzi riadkami */
+    margin-inline: 2rem;
+  }
+  
+}
+
+
+/*tu je slider show pre reviews*/
+
+
+
+/* Wrapper pre slider */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Skryje obsah mimo viditeľnej oblasti */
+  padding: 2rem; /* Priestor okolo slidera */
+}
+
+/* Posuvný kontajner */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Plynulý prechod pri posúvaní */
+  width: 100%; /* Šírka slidera */
+}
+
+/* Každý kontajner */
+.slider-item {
+  flex: 0 0 100%; /* Každý kontajner zaberie 100% šírky slidera */
+  max-width: 100vw; /* Maximálna šírka kontajnera */
+  margin: auto; /* Zarovná kontajner na stred */
+   /* Jemný tieň */
+  border-radius: 1rem; /* Zaoblené rohy */
+  background-color: var(--primary-color); /* Farba pozadia */
+  padding: 2rem; /* Priestor vo vnútri kontajnera */
+}
+
+/* Šípky */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.slider-arrow.left-arrow {
+  left: 1rem;
+}
+
+.slider-arrow.right-arrow {
+  right: 1rem;
+}
+
+.slider-arrow:hover {
+  background-color: var(--primary-color);
+}
+/* Responzívne správanie pre mobilné zariadenia */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    flex-direction: column; /* Vertikálne usporiadanie */
+    padding: 1rem; /* Zmenší priestor okolo slidera */
+  }
+
+  .slider {
+    flex-direction: column; /* Vertikálne usporiadanie kontajnerov */
+    gap: 1rem; /* Pridá medzeru medzi kontajnermi */
+    overflow: visible; /* Odstráni horizontálne posúvanie */
+    width: 100vw; /* Šírka slidera */
+  }
+
+  .slider-item {
+    flex: 1 1 auto; /* Každý kontajner zaberie celú šírku */
+    max-width: 100%; /* Maximálna šírka */
+    margin: 0 auto; /* Zarovná kontajnery na stred */
+    padding: 1rem; /* Zmenší vnútorné odsadenie */
+  }
+
+  .slider-arrow {
+    display: none; /* Skryje šípky na mobilných zariadeniach */
+  }
+}
+
+
+/*toto je pre text odsadenie*/
+.home-text-container {
+  width: 100%; /* Nastaví šírku na celú obrazovku */
+  max-width: 100%; /* Zabezpečí, že text bude na celú šírku */
+  margin: 0 auto; /* Zarovná text na stred */
+  padding: 2rem; /* Priestor okolo textu */
+  text-align: center; /* Zarovná text na stred */
+}
+
+/* Pre text */
+.homeMainTextReview {
+  font-size: 1rem; /* Veľkosť textu */
+  line-height: 1.5; /* Výška riadkov pre lepšiu čitateľnosť */
+  margin-bottom: 1.5rem; /* Medzera medzi odstavcami */
+}
+
+@media (max-width: 768px) {
+  .homeMainText {
+    font-size: 1rem; /* Zmenší veľkosť textu na mobilných zariadeniach */
+    line-height: 1.6; /* Zmenší výšku riadkov */
+  }
+
+  .home-text-container {
+    padding: 0.5rem; /* Zmenší vnútorné odsadenie na mobilných zariadeniach */
+  }
+}

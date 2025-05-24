@@ -1,0 +1,88 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #3E362E;
+  font-size: 1.2rem;
+}
+
+.customNavbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 5rem;
+}
+
+.customNavbar .nav-item {
+  margin-left: 2rem; /* Nastaví odstup 1rem medzi jednotlivými položkami */
+}
+
+h1 {
+  color: #F7F9FB;
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.homeMainText {
+  padding-top: 1.5rem;
+  max-width: 30rem;
+  margin: 0px auto;
+  color: #e1bea6;;
+}
+
+.formAdd {
+  max-width: 25rem;
+  margin: 0px auto;
+  border-radius: 6px;
+  padding: 1.5rem;
+  background-color: var(--secondary-color); /* Použijeme farbu z palety */
+}
+.myRow {
+  align-items: center;
+  /* display: flex;
+  background-color: red;
+  justify-content: space-between;
+  flex-direction: row; */
+}
+.actions {
+  list-style: none; /* Odstráni odrážky zo zoznamu */
+  padding: 0; /* Odstráni vnútorné odsadenie */
+  margin: 0; /* Odstráni vonkajšie odsadenie */
+  text-align: center; /* Zarovná obsah na stred */
+  
+}
+
+.actions li {
+  display: inline-block; /* Zabezpečí, že položky budú vedľa seba */
+}
+
+.actions a{
+  transition: border-radius 0.5s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Nastaví vnútorné odsadenie tlačidla */
+  background-color: #A69080; /* Farba pozadia tlačidla */
+  color: #F7F9FB; /* Farba textu */
+  text-decoration: none; /* Odstráni podčiarknutie */
+  border-radius: 2rem; /* Zaoblené rohy */
+}
+
+.actions a:hover {
+  background-color: #865D36; /* Farba pozadia pri hover */
+
+  transform: scale(1);
+
+  border-radius: .5rem;
+  transition: border-radius 0.4s ease;
+}
+
+img {
+  display: block; /* Zarovná obrázok na stred */
+  margin: 0; /* Nastaví stredové zarovnanie */
+  width: 30rem; /* Veľkosť obrázka pre počítače */
+}
+
+@media (max-width: 768px) { /* Pre mobilné zariadenia */
+  img {
+    width: 20rem; /* Zmenší veľkosť obrázka na 5rem */
+  }
+}
