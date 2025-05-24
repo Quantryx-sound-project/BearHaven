@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="/css/global.css" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <title>Berheaven</title>
+
+    
+    <link rel="stylesheet" href="css/berheaven.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg  data-bs-theme=dark">
+        <div class="container-fluid" >
+          <!-- tu je tlacitko na krok späť -->
+          <a class="navbar-brand" href="javascript:history.back()">
+            <span class="badge bg-secondary p-3">Back</span></a
+          >
+          <a href="/">
+            <img src="/foto_p_maria/Asset 1logo2_bearhaven.svg" alt="bearhaven logo" class="navbar-logo">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse dropdown-menu-end " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 customNavbar ">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              
+              
+              
+             
+              <li class="nav-item">
+                <a class="nav-link" href="/penzion.html">Penzion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/realEstate.html">RealEstate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div style="position: relative; display: inline-block;">
+      <img src="/foto_p_maria/realEstate2.png" alt="" style="width: 100vw; display: block;">
+      <a href="/">
+        <img src="/foto_p_maria/Asset 1logo2_bearhaven.svg" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      </a>
+    </div>
+    <section class="container-md mt-3 text-center">
+      
+      <h1>
+        Where hospitality meets home.
+      </h1>
+      <p class="homeMainText">
+        BearHaven vzniká v roku 2025 ako reakcia na prirodzený projektový vývoj a ekonomický rast rodiny Macko. Myšlienku zavádza a vystužuje jeden prirodzený faktor a tým je generačná obmena.   
+      </p>
+      
+
+
+      <!--
+      <div class="card-container">
+        <div class="card-content">
+          <h1>Family resort Mária</h1>
+          <p>
+        Discover the beauty of Liptov with Family resort Mária. Enjoy cozy accommodations, wellness facilities, and unforgettable experiences for the whole family.
+          </p>
+          <a href="/penzion.html" class="btn">Explore More</a>
+        </div>
+        <div class="card-image">
+          <img src="/foto_p_maria/novy exterier stromy.jpeg" alt="Family resort Mária">
+        </div>
+      </div>
+
+
+      <div class="card-container">
+        <div class="card-content">
+          <h1> BearHaven real estate</h1>
+          <p>
+        Explore our real estate offerings in the heart of Liptov. Whether you're looking for a vacation home or an investment opportunity, we have something for you.
+          </p>
+          <a href="/realEstate.html" class="btn">Explore More</a>
+        </div>
+        <div class="card-image">
+          <img src="/foto_p_maria/realEstate1.png" alt="Family resort Mária">
+        </div>
+      </div>
+      -->
+
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Prvý slide -->
+          <div class="swiper-slide">
+            <div class="card-container">
+              <div class="card-content">
+                <h1>Family resort Mária</h1>
+                <p>
+                  Discover the beauty of Liptov with Family resort Mária. Enjoy cozy accommodations, wellness facilities, and unforgettable experiences for the whole family.
+                </p>
+                <a href="/penzion.html" class="btn">Explore More</a>
+              </div>
+              <div class="card-image">
+                <img src="/foto_p_maria/novy exterier stromy.jpeg" alt="Family resort Mária">
+              </div>
+            </div>
+          </div>
+      
+          <!-- Druhý slide -->
+          <div class="swiper-slide">
+            <div class="card-container">
+              <div class="card-content">
+                <h1>BearHaven real estate</h1>
+                <p>
+                  Explore our real estate offerings in the heart of Liptov. Whether you're looking for a vacation home or an investment opportunity, we have something for you.
+                </p>
+                <a href="/realEstate.html" class="btn">Explore More</a>
+              </div>
+              <div class="card-image">
+                <img src="/foto_p_maria/realEstate1.png" alt="Family resort Mária">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+      
+        <!-- Pagination (voliteľné) -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigačné tlačidlá Swiperu -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 BearHaven. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul class="footer-links">
+         
+          <li><p>prevadzkar@penzionmaria.eu</p></li>
+        </ul>
+      </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+ 
+  </body>
+
+</html>
